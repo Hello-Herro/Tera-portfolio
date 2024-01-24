@@ -1,15 +1,32 @@
 /** @type {import('tailwindcss').Config} */
 module.exports = {
-  content: ["index.html"],
+  content: [
+    "user-html/index.html",
+    "user-html/keranjang.html",
+    "user-html/kelolapengguna.html",
+    "user-html/pembayaran.html",
+    "user-html/transaksi.html",
+    "admin-html/dashboard.html",
+    "dashboard2.html",
+    "src/js/script.js",
+    "dashboard3.html",
+  ],
   theme: {
     extend: {
       aspectRatio: {
         "4/3": "4 / 3",
+        fontFamily: {
+          inter: ["'Inter'", "sans-serif"],
+        },
+        backgroundImage: {
+          "select-arrow":
+            'url("data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAyNCAyNCI+PHBhdGggZD0iTTExLjk5OTcgMTMuMTcxNEwxNi45NDk1IDguMjIxNjhMMTguMzYzNyA5LjYzNTg5TDExLjk5OTcgMTUuOTk5OUw1LjYzNTc0IDkuNjM1ODlMNy4wNDk5NiA4LjIyMTY4TDExLjk5OTcgMTMuMTcxNFoiIGZpbGw9InJnYmEoMTU2LDE2MywxNzUsMSkiPjwvcGF0aD48L3N2Zz4=")',
+        },
       },
     },
     container: {
       center: true,
-      padding: "16px",
+      padding: "50px",
     },
     extend: {
       colors: {
@@ -23,5 +40,5 @@ module.exports = {
       },
     },
   },
-  plugins: [],
+  plugins: [require("@tailwindcss/forms"), "@tailwindcss/typography", "@tailwindcss/aspect-ratio"],
 };
