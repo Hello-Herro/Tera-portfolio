@@ -1259,7 +1259,12 @@ select {
 .w-64 {
   width: 16rem;
 }
-
+.h-12 {
+  height: 3rem/* 48px */;
+}
+.w-12 {
+  width: 3rem/* 48px */;
+}
 .w-8 {
   width: 2rem;
 }
