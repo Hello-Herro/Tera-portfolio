@@ -2,10 +2,9 @@
 module.exports = {
   content: [
     "user-html/index.html",
-    "user-html/keranjang.html",
-    "user-html/kelolapengguna.html",
-    "user-html/pembayaran.html",
-    "user-html/transaksi.html",
+    "user-html/about.html",
+    "user-html/videoPorto.html",
+    "user-html/photosPorto.html",
     "admin-html/dashboard.html",
     "dashboard2.html",
     "src/js/script.js",
@@ -16,7 +15,7 @@ module.exports = {
       aspectRatio: {
         "4/3": "4 / 3",
         fontFamily: {
-          inter: ["'Inter'", "sans-serif"],
+          inter: ["Inter", "sans-serif"],
         },
         backgroundImage: {
           "select-arrow":
